@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Invest in Jersey</title>
+    <title>Why Jersey - Invest in Jersey</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -17,12 +17,82 @@
     <div id="content" style="display: none;">
         <header>
             <div class="container">
-                <h1 data-en="Invest in Jersey" data-ka="ჯერსიში ინვესტიცია" data-de="Investieren Sie in Jersey">Invest in Jersey</h1>
+                <h1 data-en="Why Invest in Jersey?" data-ka="რატომ ინვესტიცია ჯერსიში?" data-de="Warum in Jersey investieren?">Why Invest in Jersey?</h1>
             </div>
         </header>
 
         <main class="container">
             <section>
-                <h2 data-en="Why Jersey?" data-ka="რატომ ჯერსი?" data-de="Warum Jersey?">Why Jersey?</h2>
-                <p data-en="Jersey offers a stable regulatory framework and an innovation-friendly environment for blockchain enterprises." 
-                   data-ka="ჯერსი გთავაზობთ სტაბილურ რეგულატორულ ჩარჩოსა და ინოვაციებისადმი ხე
+                <h2 data-en="Blockchain-Friendly Regulation"
+                    data-ka="ბლოკჩეინზე მორგებული რეგულაცია"
+                    data-de="Blockchain-freundliche Regulierung">Blockchain-Friendly Regulation</h2>
+                <p data-en="Jersey offers a forward-thinking legal environment, recognized internationally for its clarity on digital asset legislation and support for decentralized finance."
+                   data-ka="ჯერსი გთავაზობთ პროგრესულ იურიდიულ გარემოს, რომელიც საერთაშორისო დონეზე ცნობილია ციფრული აქტივების შესახებ მკაფიო რეგულაციებითა და დეცენტრალიზებული ფინანსების მხარდაჭერით."
+                   data-de="Jersey bietet ein fortschrittliches rechtliches Umfeld, das international für seine Klarheit in Bezug auf digitale Vermögenswerte und die Unterstützung von DeFi anerkannt ist.">
+                    Jersey offers a forward-thinking legal environment, recognized internationally for its clarity on digital asset legislation and support for decentralized finance.
+                </p>
+            </section>
+
+            <section>
+                <h2 data-en="Existing Blockchain Ecosystem"
+                    data-ka="არსებული ბლოკჩეინის ეკოსისტემა"
+                    data-de="Bestehendes Blockchain-Ökosystem">Existing Blockchain Ecosystem</h2>
+                <p data-en="Jersey is home to multiple digital asset service providers, tokenization platforms, and fintech startups. Key players operate within the Jersey Financial Services Commission (JFSC) regulatory sandbox."
+                   data-ka="ჯერსიში მრავალი ციფრული აქტივების სერვისის მიმწოდებელი, ტოკენიზაციის პლატფორმა და ფინტექ სტარტაპია წარმოდგენილი. წამყვანი მოთამაშეები მოქმედებენ ჯერსის საფინანსო სერვისების კომისიის (JFSC) რეგულატორულ სენდბოქსში."
+                   data-de="In Jersey befinden sich zahlreiche Anbieter digitaler Vermögensdienste, Tokenisierungsplattformen und Fintech-Startups. Wichtige Akteure arbeiten im regulatorischen Sandbox der Jersey Financial Services Commission (JFSC).">
+                    Jersey is home to multiple digital asset service providers, tokenization platforms, and fintech startups. Key players operate within the Jersey Financial Services Commission (JFSC) regulatory sandbox.
+                </p>
+            </section>
+
+            <section>
+                <h2 data-en="Strategic Gateway"
+                    data-ka="სტრატეგიული კარიბჭე"
+                    data-de="Strategisches Tor">Strategic Gateway</h2>
+                <p data-en="As a well-connected international financial center, Jersey provides access to the UK, EU, and global capital while remaining agile and business-friendly."
+                   data-ka="ჯერსი, როგორც კარგად დაკავშირებული საერთაშორისო საფინანსო ცენტრი, გთავაზობთ წვდომას დიდი ბრიტანეთის, ევროკავშირის და გლობალურ კაპიტალთან, აგრეთვე მოქნილ და ბიზნესზე ორიენტირებულ გარემოს."
+                   data-de="Jersey bietet als gut vernetztes internationales Finanzzentrum Zugang zu Großbritannien, der EU und globalem Kapital bei gleichzeitig agiler, unternehmensfreundlicher Struktur.">
+                    As a well-connected international financial center, Jersey provides access to the UK, EU, and global capital while remaining agile and business-friendly.
+                </p>
+            </section>
+
+            <section>
+                <h2 data-en="Contact the Jersey Blockchain Team"
+                    data-ka="დაგვიკავშირდით - ჯერსის ბლოკჩეინის გუნდი"
+                    data-de="Kontaktieren Sie das Jersey Blockchain Team">Contact the Jersey Blockchain Team</h2>
+                <p data-en="Email: info@jerseyblockchain.je"
+                   data-ka="ელფოსტა: info@jerseyblockchain.je"
+                   data-de="E-Mail: info@jerseyblockchain.je">Email: info@jerseyblockchain.je</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p data-en=
+                   data-ka=
+                   data-de=</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const buttons = {
+            en: document.getElementById('lang-en'),
+            ka: document.getElementById('lang-ka'),
+            de: document.getElementById('lang-de')
+        };
+
+        const switchLanguage = (lang) => {
+            document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+                el.textContent = el.getAttribute('data-' + lang);
+            });
+            document.querySelector('.language-selection').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        };
+
+        buttons.en.addEventListener('click', () => switchLanguage('en'));
+        buttons.ka.addEventListener('click', () => switchLanguage('ka'));
+        buttons.de.addEventListener('click', () => switchLanguage('de'));
+    </script>
+</body>
+</html>
+
