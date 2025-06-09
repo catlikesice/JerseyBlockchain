@@ -25,4 +25,53 @@
             <section>
                 <h2 data-en="Why Jersey?" data-ka="რატომ ჯერსი?" data-de="Warum Jersey?">Why Jersey?</h2>
                 <p data-en="Jersey offers a stable regulatory framework and an innovation-friendly environment for blockchain enterprises." 
-                   data-ka="ჯერსი გთავაზობთ სტაბილურ რეგულატორულ ჩარჩოსა და ინოვაციებისადმი ხე
+                   data-ka="ჯერსი გთავაზობთ სტაბილურ რეგულატორულ ჩარჩოსა და ინოვაციებისადმი ხელსაყრელ გარემოს ბლოკჩეინის კომპანიებისთვის."
+                   data-de="Jersey bietet einen stabilen regulatorischen Rahmen und ein innovationsfreundliches Umfeld für Blockchain-Unternehmen.">
+                    Jersey offers a stable regulatory framework and an innovation-friendly environment for blockchain enterprises.
+                </p>
+            </section>
+
+            <section>
+                <h2 data-en="Opportunities for Georgian Innovators" data-ka="შესაძლებლობები ქართველი ინოვატორებისთვის" data-de="Chancen für georgische Innovatoren">Opportunities for Georgian Innovators</h2>
+                <p data-en="Join a growing ecosystem of digital finance in a well-regulated jurisdiction with global reach." 
+                   data-ka="შეუერთდით ციფრული ფინანსების მზარდ ეკოსისტემას კარგად რეგულირებულ იურისდიქციაში, გლობალური წვდომით."
+                   data-de="Treten Sie einem wachsenden Ökosystem digitaler Finanzen in einer gut regulierten Gerichtsbarkeit mit globaler Reichweite bei.">
+                    Join a growing ecosystem of digital finance in a well-regulated jurisdiction with global reach.
+                </p>
+            </section>
+
+            <section>
+                <h2 data-en="Contact Us" data-ka="დაგვიკავშირდით" data-de="Kontaktieren Sie uns">Contact Us</h2>
+                <p data-en="Email: info@jerseyblockchain.je" data-ka="ელფოსტა: info@jerseyblockchain.je" data-de="E-Mail: info@jerseyblockchain.je">Email: info@jerseyblockchain.je</p>
+            </section>
+        </main>
+
+        <footer>
+            <div class="container">
+                <p data-en="Supported by the Government of Jersey" data-ka="ჯერსის მთავრობის მხარდაჭერით" data-de="Unterstützt von der Regierung von Jersey">Supported by the Government of Jersey</p>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const buttons = {
+            en: document.getElementById('lang-en'),
+            ka: document.getElementById('lang-ka'),
+            de: document.getElementById('lang-de')
+        };
+
+        const switchLanguage = (lang) => {
+            document.querySelectorAll('[data-' + lang + ']').forEach(el => {
+                el.textContent = el.getAttribute('data-' + lang);
+            });
+            document.querySelector('.language-selection').style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        };
+
+        buttons.en.addEventListener('click', () => switchLanguage('en'));
+        buttons.ka.addEventListener('click', () => switchLanguage('ka'));
+        buttons.de.addEventListener('click', () => switchLanguage('de'));
+    </script>
+</body>
+</html>
+
