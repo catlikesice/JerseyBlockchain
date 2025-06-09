@@ -79,6 +79,22 @@ header h1 {
     transform: scale(1.05);
     background: linear-gradient(145deg, #0072ff, #00c6ff);
 }
+.jersey-link-btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    background: #00e6ff;
+    color: #011627;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background 0.2s, color 0.2s;
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+.jersey-link-btn:hover {
+    background: #011627;
+    color: #00e6ff;
+}
 
 /* Main Content Sections */
 main section {
